@@ -1,4 +1,5 @@
-(() => {
+if (window.__GLOBAL_AUDIO_MANIPULATOR_ACTIVE__) return;
+window.__GLOBAL_AUDIO_MANIPULATOR_ACTIVE__ = true;
   const AudioContext = window.AudioContext || window.webkitAudioContext;
   const ctx = new AudioContext();
 
